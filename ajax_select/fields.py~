@@ -76,8 +76,7 @@ class AutoCompleteSelectWidget(forms.widgets.TextInput):
                                         % (getattr(settings, 'AJAX_SELECT_TEMPLATES_DIR', ""),
                                                                                 self.channel),
                                     'autocompleteselect_%s.html' % self.channel,
-                                    'autocompleteselect.html'),
-                                    context))
+                                    'autocompleteselect.html'), context))
 
     def value_from_datadict(self, data, files, name):
 
